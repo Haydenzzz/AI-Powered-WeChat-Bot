@@ -1,0 +1,12 @@
+backend/__pycache__
+backend/chat_history.db
+backend/backup
+config/.env
+frontend/node_modules
+frontend/WechatEveryDay.memory-card.json
+frontend/test.js
+frontend/package-lock.json
+frontend/yarn.lock
+frontend/Chromium.app
+frontend/.DS_Store
+frontend/backup

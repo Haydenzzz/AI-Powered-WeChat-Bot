@@ -1,0 +1,54 @@
+{
+  "name": "wechat-bot",
+  "version": "1.0.0-alpha.1",
+  "description": "wechat-bot",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node ./cli.js",
+    "format": "prettier --write ./src",
+    "start": "node ./cli.js",
+    "test": "node ./src/wechaty/testMessage.js",
+    "test-openai": "node ./src/openai/__test__.js",
+    "test-xunfei": "node ./src/xunfei/__test__.js",
+    "test-kimi": "node ./src/kimi/__test__.js",
+    "prepare": "husky",
+    "crawl": "python3 ./src/爬取文章/爬取文章.py"
+  },
+  "lint-staged": {
+    "*.{js,ts,md}": [
+      "prettier --write"
+    ]
+  },
+  "bin": {
+    "we": "./cli.js",
+    "wb": "./cli.js",
+    "wechat-bot": "./cli.js"
+  },
+  "author": "Hayden",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.4",
+    "chatgpt": "^5.2.5",
+    "chinese-workday": "^1.10.0",
+    "chrono-node": "^2.7.6",
+    "commander": "^12.0.0",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "inquirer": "^10.1.8",
+    "node-schedule": "^2.1.1",
+    "openai": "^4.55.7",
+    "p-timeout": "^6.0.0",
+    "qrcode-terminal": "^0.12.0",
+    "remark": "^15.0.1",
+    "strip-markdown": "^6.0.0",
+    "wechat4u": "^0.7.14",
+    "wechaty": "^1.20.2",
+    "wechaty-puppet-wechat4u": "^1.14.14",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.9"
+  }
+}
