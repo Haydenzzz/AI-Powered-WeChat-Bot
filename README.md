@@ -26,16 +26,19 @@
 1. 克隆仓库：
 
    git clone https://github.com/Haydenzzz/AI-Powered-WeChat-Bot
+
    cd your-repo-name
 
 2. 安装后端依赖：
 
    cd backend
+
    pip install -r requirements.txt
 
 3. 安装前端依赖：
 
    cd ../frontend
+
    yarn install
 
 4. 配置环境变量：
@@ -46,11 +49,13 @@
 1. 启动后端服务：
 
    cd backend
+
    python app.py
 
 2. 在新的终端窗口中启动前端服务：
 
    cd frontend
+
    yarn start
 
 3. 扫描终端中显示的二维码登录微信。
